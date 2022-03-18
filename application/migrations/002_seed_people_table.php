@@ -21,7 +21,7 @@ class Migration_Seed_People_Table extends CI_Migration {
 			$fo = [
                 "name" => $this->faker->name(),
 				//"name" => implode(", ", $this->faker->randomElements($vnevek)+ $this->faker->randomElements($knevek)),
-				"name" => $this->faker->email(),
+				"email" => $this->faker->email(),
                 //"email" => implode(", ", $this->faker->unique()->randomElements($vnevek) + $this->faker->randomElements($knevek)+"@"+$this->faker->randomElements($mailek)),
 				"age" => $this->faker->numberBetween(20, 80),
 			];
